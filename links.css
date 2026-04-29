@@ -144,12 +144,14 @@
   text-decoration: none;
   cursor: pointer;
   opacity: 0;
+  animation: lk-fadeUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) var(--lk-delay, 0.18s) forwards;
   transition: background 0.22s, transform 0.22s, box-shadow 0.22s, border-color 0.22s;
 }
 
-.lk-card:nth-child(1) { animation: lk-fadeUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.18s forwards, cta-gradient 10s linear 0.73s infinite; }
-.lk-card:nth-child(2) { animation: lk-fadeUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.28s forwards; }
-.lk-card:nth-child(3) { animation: lk-fadeUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.38s forwards; }
+.lk-card:nth-child(1) { --lk-delay: 0.18s; }
+.lk-card:nth-child(2) { --lk-delay: 0.28s; }
+.lk-card:nth-child(3) { --lk-delay: 0.38s; }
+.lk-card:nth-child(4) { --lk-delay: 0.48s; }
 
 .lk-card:hover {
   background: #f8fefe;
@@ -162,6 +164,9 @@
 .lk-card--primary {
   background: linear-gradient(135deg, #4A4D7E, #252540, #323354, #252540, #4A4D7E);
   background-size: 400% 400%;
+  animation:
+    lk-fadeUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) var(--lk-delay, 0.18s) forwards,
+    cta-gradient 10s linear calc(var(--lk-delay, 0.18s) + 0.55s) infinite;
   border-color: transparent;
   box-shadow: 0 6px 28px rgba(50, 51, 84, 0.28);
   position: relative;
