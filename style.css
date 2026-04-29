@@ -104,7 +104,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* ===== TOP BAR ===== */
 .top-bar {
   height: 6px;
-  background: var(--gradient);
+  background: linear-gradient(to right, #C71E30, #A92030);
   width: 100%;
 }
 
