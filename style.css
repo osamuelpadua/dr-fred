@@ -451,7 +451,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--primary);
+  color: #C71E30;
   margin-bottom: 12px;
 }
 
@@ -771,9 +771,9 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* ===== WHATSAPP FLUTUANTE ===== */
 @keyframes wpp-pulse {
-  0%   { box-shadow: 0 0 0 0 rgba(74, 77, 126, 0.55), 0 0 0 0 rgba(74, 77, 126, 0.3); }
-  50%  { box-shadow: 0 0 0 14px rgba(74, 77, 126, 0.12), 0 0 0 28px rgba(74, 77, 126, 0.04); }
-  100% { box-shadow: 0 0 0 0 rgba(74, 77, 126, 0), 0 0 0 0 rgba(74, 77, 126, 0); }
+  0%   { box-shadow: 0 0 0 0 rgba(20, 184, 166, 0.5), 0 0 0 0 rgba(15, 118, 110, 0.28); }
+  50%  { box-shadow: 0 0 0 14px rgba(20, 184, 166, 0.14), 0 0 0 28px rgba(15, 118, 110, 0.05); }
+  100% { box-shadow: 0 0 0 0 rgba(20, 184, 166, 0), 0 0 0 0 rgba(15, 118, 110, 0); }
 }
 
 .whatsapp-float {
@@ -782,7 +782,7 @@ body::-webkit-scrollbar-thumb:hover {
   right: 30px;
   width: 72px;
   height: 72px;
-  background: linear-gradient(135deg, #4A4D7E, #323354);
+  background: linear-gradient(135deg, #1cc7b5, #0f9f97);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -796,7 +796,7 @@ body::-webkit-scrollbar-thumb:hover {
 .whatsapp-float:hover {
   transform: scale(1.05);
   animation: none;
-  box-shadow: 0 6px 28px rgba(50, 51, 84, 0.5);
+  box-shadow: 0 6px 28px rgba(15, 118, 110, 0.38);
 }
 
 .whatsapp-float:hover .wpp-badge {
@@ -1464,7 +1464,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: 600;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: #1E2038;
+  color: #C71E30;
   margin-bottom: 18px;
 }
 
@@ -1593,6 +1593,10 @@ body::-webkit-scrollbar-thumb:hover {
   flex: 0 1 360px;
 }
 
+.faq-cta-line {
+  display: block;
+}
+
 .faq-cta-text strong {
   font-weight: 700;
   color: #1A1B36;
@@ -1631,6 +1635,10 @@ body::-webkit-scrollbar-thumb:hover {
   .faq-cta-text {
     max-width: 100%;
     flex-basis: auto;
+  }
+
+  .faq-cta-line {
+    display: inline;
   }
 
   .faq-footer .btn-cta {
@@ -1719,7 +1727,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #1E2038;
+  color: #C71E30;
   margin-bottom: 10px;
 }
 
