@@ -335,7 +335,7 @@ body::-webkit-scrollbar-thumb:hover {
   height: 248px;
   display: flex;
   align-items: center;
-  background: linear-gradient(to right, #4A4D7E 0%, #323354 100%);
+  background: linear-gradient(to right, #C71E30 0%, #A92030 100%);
   overflow: hidden;
 }
 
